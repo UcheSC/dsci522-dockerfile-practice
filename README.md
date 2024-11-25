@@ -25,6 +25,10 @@ docker build --tag practice-2 --platform=linux/amd64 .
 docker run --rm -p 8888:8888 --platform=linux/amd64 practice-2
 ```
 
+Setup Github Actions: simply put this is a workflow that performs certain steps based on triggers.
+
+Setup a secret because the github Action requires authentication to Dockerhub
+
 # Note
 - Run the commands at each step, save debug man-hours
 - Run the installations command locally to ensure they work before adding them to the Dockerfile
